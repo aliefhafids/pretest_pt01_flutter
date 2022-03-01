@@ -54,7 +54,7 @@ Widget _buildSuggestions() {
         if (i.isOdd) {
           return const Divider();
         }
-        
+
         final index = i~/ 2;
         if (index >= _suggestions.length) {
           _suggestions.addAll(generateWordPairs().take(10));
@@ -63,6 +63,7 @@ Widget _buildSuggestions() {
       },
   );
 }
+
 
 Widget _buildRow(WordPair pair) {
   return ListTile(
